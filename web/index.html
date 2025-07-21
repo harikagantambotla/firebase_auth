@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase Auth Web App</title>
+  <meta name="description" content="Flutter Web App with Firebase Auth">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Firebase Web SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js"></script>
+
+  <script>
+    // Replace this config with your Firebase Web config
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+      projectId: "YOUR_PROJECT_ID",
+      storageBucket: "YOUR_PROJECT_ID.appspot.com",
+      messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+      appId: "YOUR_APP_ID"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+</head>
+<body>
+<script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
